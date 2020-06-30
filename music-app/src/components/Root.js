@@ -11,14 +11,17 @@ class Root extends Component  {
         return(
             <>
             <div className="container">
-                <Header />
-                <main>
+                <header className="has-background-grey-darker has-text-light">
+                    <Header />
                     <Search />
+                </header>
+
+                <main>
                     <Content />
-                    <h4 className="title">Hello From Root!</h4>
                 </main>
             </div>
-            <footer>
+            
+            <footer className="has-background-grey-darker">
                 <Footer />
             </footer>
             </>

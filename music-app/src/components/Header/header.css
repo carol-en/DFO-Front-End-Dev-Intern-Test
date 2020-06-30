@@ -1,3 +1,6 @@
-header .title {
+section.hero h1 {
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
