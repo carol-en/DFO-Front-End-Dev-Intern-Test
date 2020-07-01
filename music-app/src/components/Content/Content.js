@@ -3,40 +3,35 @@ import './content.css';
 
 class Content extends Component  {
     render() {
+        const foundArtists = this.props.artists;
+        const albumsList = foundArtists.search_albums.map(album => <li>{album}</li>);
+
         return(
-            <section className="main-content">
-                <h2 className="title is-1">Artist/Band Name</h2>
+            <section className="main-content box">
+                <h2 className="title is-1">{foundArtists.search_name}</h2>
 
-                <article className="music-data content columns box">
+                <article className="music-data content columns">
 
-                    <div className="music-img column  is-one-fifth">
-                        <figure className="image is-square">
-                            <img src="https://i.imgur.com/gX1WzV0.jpeg" alt="Band Name" />
+                    <div className="music-img column is-one-quarter">
+                        <figure className="image artist-thumb">
+                            <img src={foundArtists.search_image} alt={foundArtists.search_name} />
                         </figure>
 
                     </div>
 
-                    <div className="albums column is-one-quarter">
-                        <h3 className="subtitle is-4 ">Albums</h3>
+                    <div className="albums column">
+                        <h4 className="subtitle is-4 ">Albums</h4>
                         <ol className="album-list">
-                            <li>lorkejwfnesjfkrejgkrjek</li>
-                            <li>lorkejwfnesjfkrejgkrjek</li>
-                            <li>lorkejwfnesjfkrejgkrjek</li>
-                            <li>lorkejwfnesjfkrejgkrjek</li>
-                            <li>lorkejwfnesjfkrejgkrjek</li>
-                            <li>lorkejwfnesjfkrejgkrjek</li>
+                            {albumsList}
                         </ol>
                     </div>
+                </article>
 
-                    <div className="music-about column">
-
-                        <h3 className="subtitle is-4">About</h3>
-
-                        <p>
-                            <a href="#">Link </a> 
-                            Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.Curabitur accumsan turpis pharetra augue tincidunt blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
-                        </p>
-                    </div>
+                <article className="music-data content">
+                <div className="music-about">
+                    <h3 className="subtitle is-2">About</h3>
+                        {foundArtists.search_about}
+                </div>
                 </article>
             </section>
         )

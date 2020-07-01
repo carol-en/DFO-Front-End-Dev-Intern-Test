@@ -1,9 +1,13 @@
 
 .main-content {
     padding: 2rem;
-    text-align: center;
 }
 
-.albums h3 {
+
+figure.artist-thumb img {
+    max-width: 100%;
+}
+
+.main-content h2, .main-content h3 {
     text-align: center;
 }

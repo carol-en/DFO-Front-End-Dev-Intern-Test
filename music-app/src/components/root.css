@@ -13,3 +13,9 @@ body, html {
 header {
     padding: 4rem 2rem;
 }
+
+h2.empty-search-content {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top:  2rem;
+}
