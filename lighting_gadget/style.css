@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Roboto:wght@400;500&display=swap");
+body {
+  background: #fff;
+  font-family: 1200px; }
+
+a {
+  color: #2e7bbf; }
+
+a:hover {
+  color: #4ca2ec; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto", verdana, sans-serif; }
+
+.container {
+  margin: 0 auto; }
+
+nav {
+  padding: 1.5rem 0; }
+  @media screen and (max-width: 700px) {
+    nav {
+      margin: 0 auto;
+      text-align: center;
+      padding: 1.5rem 0; } }
+  @media screen and (max-width: 1200px) {
+    nav {
+      padding: 1.5rem 3rem; } }
+
+header.hero {
+  background: #fff url("./images/bg-hero.jpg") center no-repeat; }
+  @media screen and (max-width: 700px) {
+    header.hero {
+      padding: 3rem 1rem; } }
+
+aside.lead-in {
+  color: #fff;
+  font-family: "Roboto", verdana, sans-serif; }
+  aside.lead-in h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 1em 0;
+    font-size: 2em; }
+  @media screen and (max-width: 700px) {
+    aside.lead-in {
+      display: none; } }
+  @media screen and (max-width: 1200px) {
+    aside.lead-in {
+      font-size: .9em; } }
+
+ul.tack-off {
+  list-style: none; }
+  ul.tack-off li:before {
+    content: "";
+    border-color: transparent orange;
+    border-style: solid;
+    border-width: .5em 0 .5em .5em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1em;
+    position: relative; }
+
+aside.contact-us {
+  background: #fff;
+  text-align: center;
+  font-family: "Montserrat", verdana, sans-serif;
+  padding: 2rem 1rem; }
+  aside.contact-us h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0; }
+  aside.contact-us .btn {
+    background: #ffa200;
+    border: 0;
+    font-weight: light;
+    text-transform: uppercase; }
+
+section.services h1 {
+  background: #2e7bbf;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  padding: .5rem 0; }
+section.services .row {
+  padding: 1.25rem 0; }
+section.services .btn {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: #dcdcdc;
+  margin: .5em .15em;
+  font-weight: bold; }
+  section.services .btn .fa-check {
+    color: #2e7bbf; }
+  @media screen and (max-width: 1200px) {
+    section.services .btn {
+      margin: .25em .05em;
+      font-size: .9em; } }
+section.services .text-muted {
+  margin: .5em 0; }
+
+/*# sourceMappingURL=style.css.map */

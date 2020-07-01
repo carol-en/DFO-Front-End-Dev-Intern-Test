@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,700&family=Roboto:wght@400;500&display=swap');
+
+
+$white: #fff;
+$black: #000;
+$orange: #ffa200;
+$blue: #2e7bbf;
+$blue-lighter: #4ca2ec;
+$gray: #dcdcdc;
+$roboto-font:   'Roboto', verdana, sans-serif;
+$monst-font: 'Montserrat', verdana, sans-serif;
+$small-bp: 700px;
+$med-bp: 1200px;
+
+body {
+    background: $white;
+    font-family: $med-bp;
+}
+
+a { color: $blue; }
+a:hover { color: $blue-lighter; }
+
+h1, h2, h3, h4, h5 { font-family: $roboto-font; }
+
+.container { margin: 0 auto; } // Center containers/wrappers
+
+// NAV
+nav {
+    padding: 1.5rem 0;
+
+    @media screen and (max-width: $small-bp) {
+        margin: 0 auto;
+        text-align: center;
+        padding: 1.5rem 0;
+      }
+
+      @media screen and (max-width: $med-bp) {
+          padding: 1.5rem 3rem;
+      }
+}
+
+// HEADER STARTS HERE
+header.hero {
+    background: $white url('./images/bg-hero.jpg') center no-repeat;
+
+        @media screen and (max-width: $small-bp) {
+            padding: 3rem 1rem;
+        }
+}
+
+//  LEFT HALF, QUOTES
+aside.lead-in {
+    color: $white;
+    font-family: $roboto-font;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 0 1em 0;
+        font-size: 2em;
+    }
+
+    @media screen and (max-width: $small-bp) {
+        display: none;
+    }
+
+    @media screen and (max-width: $med-bp) {
+        font-size: .9em;
+    }
+}
+
+// BULLET POINTS
+ul.tack-off {
+    list-style: none;
+
+    li:before { 
+        content: "";
+        border-color: transparent orange;
+        border-style: solid;
+        border-width: .5em 0 .5em .5em;
+        display: block;
+        height: 0;
+        width: 0;
+        left: -1em;
+        top: 1em;
+        position: relative;
+    }
+
+}
+
+// RIGHT HALF, FORM
+aside.contact-us {
+    background: $white;
+    text-align: center;
+    font-family: $monst-font;
+    padding: 2rem 1rem;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding: 0;
+    }
+
+    .btn {
+        background: $orange;
+        border: 0;
+        font-weight: light;
+        text-transform: uppercase;
+    }
+}
+
+section.services {
+    h1 {
+        background: $blue;
+        color: $white;
+        font-size: 1.25em;
+        font-weight: bold;
+        text-align: center;
+        padding: .5rem 0;
+    }
+
+    .row {
+        padding: 1.25rem 0;
+    }
+
+    .btn {
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        background: $gray;
+        margin: .5em .15em;
+        font-weight: bold;
+
+        .fa-check {
+            color: $blue;
+        }
+
+        @media screen and (max-width: $med-bp) {
+            margin: .25em .05em;
+            font-size: .9em;
+        }
+    }
+
+    .text-muted {
+        margin: .5em 0;
+    }
+
+}
