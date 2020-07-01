@@ -1,4 +1,4 @@
-# Musi - Call
+# [Musi - Call](https://musi-call.herokuapp.com/)
 
 Simple app to search up musicians and get information about them. It was created using ReactJS, Bulma, and Axios with some Google Fonts for extra customization. I also have used Heroku for deployment & GIT  for version control.
 
