@@ -1,4 +1,4 @@
-# Lightning Gadget
+# [Lightning Gadget](https://lightning-gadget.herokuapp.com/)
 
 The tools I used to build the site up from the ground up was vanilla HTML, **SASS**, and **Bootstrap**. My reasonings for that is because I already knew going in to the music app that I was use ReactJS for it. So for this challenge I chose not to use a library for it. For the styling I chose Bootstrap mostly for practice using it again as I had not for a long while. My personal preference is not using frameworks like Bootstrap or Bulma but I do practice with them because businesses do like using them. I used SASS as well to help make the styling management a bit easier and faster due to limited time.
 
