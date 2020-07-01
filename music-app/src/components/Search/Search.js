@@ -3,8 +3,7 @@ import './search.css';
 
 class Search extends Component  {
     render() {
-        const formInputs = this.props.artists.artist,
-        searchEntry = this.props.artists.search_entry,
+        const searchEntry = this.props.artists.search_entry,
         handleChange = this.props.handleChange,
         handleSubmit = this.props.handleSubmit;
 

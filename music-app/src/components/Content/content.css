@@ -8,6 +8,11 @@ figure.artist-thumb img {
     max-width: 100%;
 }
 
-.main-content h2, .main-content h3 {
+.main-content h2 {
     text-align: center;
+    text-transform: uppercase;
+}
+.music-img {
+    text-align: center;
+    font-size: .9em;
 }

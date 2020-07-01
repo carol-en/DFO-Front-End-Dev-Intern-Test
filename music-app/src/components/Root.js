@@ -18,35 +18,35 @@ class Root extends Component  {
             }
         }
 
-        componentDidMount() {
-            axios('https://www.themealdb.com/api/json/v2/9973533/latest.php')
-                // .then(data => console.log(data))
-                .catch(error => console.log(error));
-        }
-
+        // Handles changing & updating search form input
         handleChange = (event) => {
             this.setState({ search_entry: event.target.value });
         }
 
+        // Connects to API and searches database, returns information and updates state
         handleSubmit = (event) => {
             event.preventDefault();
             const artistSearch = this.state.search_entry.toLocaleLowerCase();
-            // 9973533
-            axios(`https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artistSearch}`)
+
+
+            axios.all([
+                axios.post(`https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artistSearch}`),
+                axios.post(`https://www.theaudiodb.com/api/v1/json/1/searchalbum.php?s=${artistSearch}`) ])
                 .then(data => {
-                    const { strArtist, strBiographyEN, strArtistThumb } = data.data.artists[0];
-                    
-                    // console.log(data);
+                    const { strArtist, strBiographyEN, strArtistThumb } = data[0].data.artists[0];
+                    const foundAlbums = [];
+                    data[1].data.album.map(album => foundAlbums.push(album.strAlbum));
 
                     this.setState({
                         search_entry: "",
                         artist: {
                             search_name: strArtist,
                             search_image: strArtistThumb,
-                            search_albums: ["Saab", "Volvo", "BMW"],
+                            search_albums: foundAlbums,
                             search_about: strBiographyEN
                         }
-                    });
+                    })
+                    
                 })
                 .catch(error => console.log(error.message));
             
@@ -59,11 +59,17 @@ class Root extends Component  {
             <div className="container">
                 <header className="has-background-grey-darker has-text-light">
                     <Header />
-                    <Search artists={this.state} handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
+                    <Search artists={this.state} 
+                        handleChange={this.handleChange} 
+                        handleSubmit={this.handleSubmit}
+                    />
                 </header>
 
                 <main>
-                    {this.state.artist.search_name ?  <Content artists={this.state.artist}/> : <h2 className="title is-1 empty-search-content">Search Artist!</h2> }
+                    {this.state.artist.search_name ?  
+                        <Content artists={this.state.artist}/> : 
+                        <h2 className="title is-1 empty-search-content">Search Artist!</h2> 
+                    }
                 </main>
             </div>
             
