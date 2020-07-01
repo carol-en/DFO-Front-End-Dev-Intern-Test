@@ -3,7 +3,7 @@
 
 $white: #fff;
 $black: #000;
-$orange: #ffa200;
+$orange: #de5704;
 $blue: #2e7bbf;
 $blue-lighter: #4ca2ec;
 $gray: #dcdcdc;
@@ -15,6 +15,8 @@ $med-bp: 1200px;
 body {
     background: $white;
     font-family: $med-bp;
+    margin: 0;
+    padding: 0;
 }
 
 a { color: $blue; }
@@ -22,7 +24,7 @@ a:hover { color: $blue-lighter; }
 
 h1, h2, h3, h4, h5 { font-family: $roboto-font; }
 
-.container { margin: 0 auto; } // Center containers/wrappers
+.container { margin: 0 auto; max-width: 95% } // Center containers/wrappers
 
 // NAV
 nav {
@@ -73,19 +75,12 @@ aside.lead-in {
 ul.tack-off {
     list-style: none;
 
-    li:before { 
-        content: "";
-        border-color: transparent orange;
-        border-style: solid;
-        border-width: .5em 0 .5em .5em;
-        display: block;
-        height: 0;
-        width: 0;
-        left: -1em;
-        top: 1em;
-        position: relative;
+    .fa-caret-right { 
+        color: $orange; 
+        margin: 0 .75em 0 0;  
     }
 
+    li { margin: 0 0 .65em 0; }
 }
 
 // RIGHT HALF, FORM
@@ -110,6 +105,7 @@ aside.contact-us {
     }
 }
 
+//  MIDDLE SECTION CONTENT, PRODUCT INFORMATION + FEATURES
 section.services {
     h1 {
         background: $blue;
@@ -146,4 +142,65 @@ section.services {
         margin: .5em 0;
     }
 
+}
+
+// BOTTOM TRIPLE CARDS + NUMBERS
+section.company-numbers {
+    padding: 3rem 0;
+
+    article {
+        text-align: center;
+
+        div {
+            border: 1px solid $orange;
+            padding: 2rem .5rem;
+        }
+
+        @media screen and (max-width: $med-bp) {
+            padding: 1.5rem .5rem;
+        }
+
+        h2.lead-in {
+            color: $orange;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 1.15em;
+
+            @media screen and (max-width: $med-bp) {
+                font-size: 1em;
+            }
+
+        }
+
+        h3.numbers {
+            font-weight: lighter;
+            font-size: 2em;
+
+            @media screen and (max-width: $med-bp) {
+                font-size: 1.75em;
+            }
+            
+        }
+
+        p.summary {
+            font-size: .90em;
+
+            @media screen and (max-width: $med-bp) {
+                font-size: .80em;
+            }
+        }
+    }
+}
+
+// FOOTER
+footer {
+    background: $blue;
+    color: $white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .9em;
+
+    @media screen and (max-width: $small-bp) {
+        padding: .5rem 0;
+    }
 }
