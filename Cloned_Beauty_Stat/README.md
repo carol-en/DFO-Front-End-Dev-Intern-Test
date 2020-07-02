@@ -1,4 +1,4 @@
-[# Clone Page](https://beauty-stat.herokuapp.com/www.beautystatcosmetics.com/en/pre-6.html)
+# [Clone Page](https://beauty-stat.herokuapp.com/www.beautystatcosmetics.com/en/pre-6.html)
 
 **1.a) Explain your method?**
 
@@ -21,7 +21,7 @@ I think the only thing off the top of my head would be whatever is adding _?lang
 
 **5.e) Clone the the page**
 
-[Page has been successfully cloned.](#)
+[Page has been successfully cloned.](https://beauty-stat.herokuapp.com/www.beautystatcosmetics.com/en/pre-6.html)
 
 [**Caroline Nolasco**](https://www.carolinenolasco.com/)
 [**Git Hub**](https://github.com/carol-en)
