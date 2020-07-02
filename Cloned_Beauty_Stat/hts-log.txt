@@ -1,0 +1,11 @@
+HTTrack3.49-2 launched on Wed, 01 Jul 2020 17:08:30 at https://www.beautystatcosmetics.com/en/pre-6.html list +*.png +*img_ +*png?language_id=1 +*?language_id=1
+(winhttrack https://www.beautystatcosmetics.com/en/pre-6.html -W -O "/Users/carolinenolasco/websites/Test 13" -%v list +*.png +*img_ +*png?language_id=1 +*?language_id=1 )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 9 seconds : 69 links scanned, 67 files written (5191434 bytes overall) [3167300 bytes received at 45902 bytes/sec], 2683817 bytes transferred using HTTP compression in 24 files, ratio 23%, 6.2 requests per connection
+(No errors, 0 warnings, 0 messages)

@@ -1,0 +1,8 @@
+https://www.beautystatcosmetics.com/en/pre-6.html -W -O "/Users/carolinenolasco/websites/Test 13" -%v list +*.png +*img_ +*png?language_id=1 +*?language_id=1
+File generated automatically on Wed, 01 Jul 2020 17:08:30, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+
