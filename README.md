@@ -3,7 +3,6 @@
 Challenged completed by [_Caroline Nolasco_](https://www.carolinenolasco.com).
 
 ## [Clone Site - Beauty Stat](https://lightning-gadget.herokuapp.com/)
-[Clone Site - Beauty Stat GitHub](https://github.com/carol-en/DFO-Front-End-Dev-Intern-Test/tree/master/Cloned_Beauty_Stat)
 
 **1.a) Explain your method?**
 
@@ -28,12 +27,19 @@ I think the only thing off the top of my head would be whatever is adding _?lang
 
 [Page has been successfully cloned.](https://beauty-stat.herokuapp.com/www.beautystatcosmetics.com/en/pre-6.html)
 
+[Clone Site - Beauty Stat GitHub](https://github.com/carol-en/DFO-Front-End-Dev-Intern-Test/tree/master/Cloned_Beauty_Stat)
+
+
 ## [Lightning Gadget Static Site](https://lightning-gadget.herokuapp.com/)
-[Lightning Gadget GitHub](https://github.com/carol-en/DFO-Front-End-Dev-Intern-Test/tree/master/lighting_gadget)
+
 
 The tools I used to build the site up from the ground up was vanilla HTML, **SASS**, and **Bootstrap**. My reasonings for that is because I already knew going in to the music app that I was use ReactJS for it. So for this challenge I chose not to use a library for it. For the styling I chose Bootstrap mostly for practice using it again as I had not for a long while. My personal preference is not using frameworks like Bootstrap or Bulma but I do practice with them because businesses do like using them. I used SASS as well to help make the styling management a bit easier and faster due to limited time.
 
 I also used icons from **Font Awesome** for custom shapes like triangles and check marks. I also used **Google Fonts** for custom fonts to help match the images better.
+
+[Lightning Gadget Static Site](https://lightning-gadget.herokuapp.com/)
+
+[Lightning Gadget GitHub](https://github.com/carol-en/DFO-Front-End-Dev-Intern-Test/tree/master/lighting_gadget)
 
 ## Music API
 
@@ -58,9 +64,11 @@ If I were to have more time I would have re-factor several things:
 
 - **Styling**:  I would clean up the style, make things look a bit nicer than they currently look. Perhaps add some CSS animation to smooth actions out to look & feel more sleek.
 
-[Caroline Nolasco](https://www.carolinenolasco.com/)
-
 [Musi - Call App](https://musi-call.herokuapp.com/)
+
 [Musi - Call GitHub](https://github.com/carol-en/DFO-Front-End-Dev-Intern-Test/tree/master/music-app)
+
+
+[Caroline Nolasco](https://www.carolinenolasco.com/)
 
 **carolinenolasco.code@gmail.com**
