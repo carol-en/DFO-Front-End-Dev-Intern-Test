@@ -1,4 +1,4 @@
-# Clone Page
+[# Clone Page](https://beauty-stat.herokuapp.com/www.beautystatcosmetics.com/en/pre-6.html)
 
 **1.a) Explain your method?**
 
